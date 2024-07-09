@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import { Inter, Public_Sans } from 'next/font/google';
+import { Public_Sans } from 'next/font/google';
 import './globals.css';
+import { cn } from '@/lib/utils';
 
 const inter = Public_Sans({
   subsets: ['latin'],
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.variable}>{children}</body>
+      <body className={cn('h-dvh w-full', inter.variable)}>{children}</body>
     </html>
   );
 }

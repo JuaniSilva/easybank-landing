@@ -10,17 +10,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'primary-dark-blue': 'hls(233, 26%, 24%)',
-        'primary-lime-green': 'hls(136, 65%, 51%)',
-        'primary-bright-cyan': 'hls(192, 70%, 51%)',
-        'neutral-grayish-blue': 'hls(233, 8%, 62%)',
-        'neutral-light-grayish-blue': 'hls(220, 16%, 96%)',
-        'neutral-very-light-gray': 'hls(0, 0%, 98%)',
+        'primary-dark-blue': 'hsl(233, 26%, 24%)',
+        'primary-lime-green': 'hsl(136, 65%, 51%)',
+        'primary-bright-cyan': 'hsl(192, 70%, 51%)',
+        'neutral-grayish-blue': 'hsl(233, 8%, 62%)',
+        'neutral-light-grayish-blue': 'hsl(220, 16%, 96%)',
+        'neutral-very-light-gray': 'hsl(0, 0%, 98%)',
       },
       fontFamily: {
         'public-sans': ['var(--font-public-sans)', ...fontFamily.sans],
       },
-      backgroundImage: {},
+      backgroundImage: {
+        'intro-mobile': "url('/images/bg-intro-mobile.svg')",
+      },
+      backgroundPosition: {
+        'intro-mobile-position': 'top 95px  right ',
+      },
     },
   },
   plugins: [],
