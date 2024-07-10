@@ -24,11 +24,15 @@ const config: Config = {
         'public-sans': ['var(--font-public-sans)', ...fontFamily.sans],
       },
       backgroundImage: {
-        'intro-mobile': "url('/images/bg-intro-mobile.svg')",
-        'intro-desktop': "url('/images/bg-intro-desktop.svg')",
+        'pattern-mobile': "url('/images/bg-intro-mobile.svg')",
+        'pattern-desktop': "url('/images/bg-intro-desktop.svg')",
       },
       backgroundPosition: {
-        'intro-mobile-position': 'top 90px right',
+        'mobile-position': 'top -65px right -20px',
+        'desktop-position': 'top -220px right -180px',
+      },
+      backgroundSize: {
+        'mobile-size': '105% 100%',
       },
     },
   },

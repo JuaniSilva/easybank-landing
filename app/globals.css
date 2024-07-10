@@ -11,3 +11,12 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.bg-position-mobile {
+  background-position: left 0px top -40px;
+}
+@media screen and (min-width: 1024px) {
+  .bg-position {
+    background-position: unset;
+  }
+}

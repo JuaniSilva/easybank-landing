@@ -6,6 +6,7 @@ import Pinterest from '@/components/icons/Pinterest';
 import Twitter from '@/components/icons/Twitter';
 import Youtube from '@/components/icons/Youtube';
 import { footerItems } from '@/lib/utils';
+import Container from './Container';
 
 const socialMedia = [
   {
@@ -38,7 +39,7 @@ const socialMedia = [
 export default function Footer() {
   return (
     <footer className='flex h-[510px] flex-col items-center justify-center bg-primary-dark-blue lg:h-[190px]'>
-      <div className='mx-auto grid h-auto w-full max-w-content text-center lg:max-h-[100px] lg:grid-cols-[1fr_2fr_1fr] lg:text-left'>
+      <Container className='grid h-auto w-full text-center lg:max-h-[100px] lg:grid-cols-[1fr_2fr_1fr] lg:text-left'>
         <div className='mx-auto w-min lg:mx-0 lg:flex lg:flex-col lg:justify-between'>
           <a href='#' className='mx-auto block h-min w-min lg:mx-0'>
             <Logo fill={'#fff'} />
@@ -69,7 +70,7 @@ export default function Footer() {
             © Easybank. All Rights Reserved
           </p>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }

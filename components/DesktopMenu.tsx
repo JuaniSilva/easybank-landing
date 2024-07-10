@@ -15,7 +15,7 @@ export default function DesktopMenu({ className }: { className?: string }) {
     <>
       <nav className={cn('hidden h-full lg:block')}>
         <ul
-          className='relative flex h-full gap-16 text-sm font-normal text-neutral-grayish-blue'
+          className='relative flex h-full gap-8 text-sm font-normal text-neutral-grayish-blue'
           onMouseLeave={() => setPosition((val) => ({ ...val, opacity: 0 }))}
         >
           {menuItems.map((item) => (
