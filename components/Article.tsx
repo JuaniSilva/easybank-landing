@@ -16,14 +16,14 @@ export default function Article({
 }: ArticleProps) {
   return (
     <a href='#'>
-      <article className='overflow-hidden rounded bg-white'>
+      <article className='overflow-hidden rounded bg-white text-left'>
         <figure className='bg-neutral-very-light-gray'>
           <Image
             src={imageSrc}
             alt={imageAlt}
             width={325}
             height={200}
-            className='w-full'
+            className='aspect-[325/200] w-full lg:aspect-[259/200]'
           />
         </figure>
         <div className='space-y-[7px] p-[30px] pb-[46px]'>
@@ -33,7 +33,9 @@ export default function Article({
           <h5 className='text-base leading-6 text-primary-dark-blue transition-colors hover:text-primary-lime-green'>
             {title}
           </h5>
-          <p className='text-xs text-neutral-grayish-blue'>{content}</p>
+          <p className='text-xs text-neutral-grayish-blue lg:text-sm'>
+            {content}
+          </p>
         </div>
       </article>
     </a>

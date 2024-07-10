@@ -37,36 +37,38 @@ const socialMedia = [
 
 export default function Footer() {
   return (
-    <footer className='flex h-[510px] flex-col items-center justify-center bg-primary-dark-blue'>
-      <div className=''>
-        <a href='#' className='mx-auto block w-min'>
-          <Logo fill={'#fff'} />
-        </a>
-        <ul className='mt-8 flex items-center gap-4'>
-          {socialMedia.map((item) => (
-            <li key={item.name} className='scale-[120%]'>
-              <a href='#'>
-                <item.Icon className='fill-white transition-colors hover:fill-primary-lime-green' />
-              </a>
+    <footer className='flex h-[510px] flex-col items-center justify-center bg-primary-dark-blue lg:h-[190px]'>
+      <div className='mx-auto grid h-auto w-full max-w-content text-center lg:max-h-[100px] lg:grid-cols-[1fr_2fr_1fr] lg:text-left'>
+        <div className='mx-auto w-min lg:mx-0 lg:flex lg:flex-col lg:justify-between'>
+          <a href='#' className='mx-auto block h-min w-min lg:mx-0'>
+            <Logo fill={'#fff'} />
+          </a>
+          <ul className='mt-8 flex h-min items-center gap-4 lg:mt-0'>
+            {socialMedia.map((item) => (
+              <li key={item.name} className='scale-[120%]'>
+                <a href='#'>
+                  <item.Icon className='fill-white transition-colors hover:fill-primary-lime-green' />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <ul className='mt-9 grid gap-4 text-center text-sm font-thin text-white lg:mt-0 lg:grid-flow-col lg:grid-rows-3 lg:text-left'>
+          {footerItems.map((item) => (
+            <li
+              key={item.name}
+              className='transition-colors hover:text-primary-lime-green'
+            >
+              <a href='#'>{item.name}</a>
             </li>
           ))}
         </ul>
-      </div>
-      <ul className='mt-9 space-y-4 text-center text-sm font-thin text-white'>
-        {footerItems.map((item) => (
-          <li
-            key={item.name}
-            className='transition-colors hover:text-primary-lime-green'
-          >
-            <a href='#'>{item.name}</a>
-          </li>
-        ))}
-      </ul>
-      <div className='mt-9 flex flex-col items-center'>
-        <Button className=''>Request Invite</Button>
-        <p className='mt-8 text-sm text-neutral-grayish-blue'>
-          © Easybank. All Rights Reserved
-        </p>
+        <div className='mt-9 flex flex-col items-center lg:mt-0 lg:items-end'>
+          <Button className=''>Request Invite</Button>
+          <p className='mt-8 text-sm text-neutral-grayish-blue'>
+            © Easybank. All Rights Reserved
+          </p>
+        </div>
       </div>
     </footer>
   );

@@ -17,14 +17,18 @@ const config: Config = {
         'neutral-light-grayish-blue': 'hsl(220, 16%, 96%)',
         'neutral-very-light-gray': 'hsl(0, 0%, 98%)',
       },
+      spacing: {
+        content: '1110px',
+      },
       fontFamily: {
         'public-sans': ['var(--font-public-sans)', ...fontFamily.sans],
       },
       backgroundImage: {
         'intro-mobile': "url('/images/bg-intro-mobile.svg')",
+        'intro-desktop': "url('/images/bg-intro-desktop.svg')",
       },
       backgroundPosition: {
-        'intro-mobile-position': 'top 95px  right ',
+        'intro-mobile-position': 'top 90px right',
       },
     },
   },

@@ -4,10 +4,10 @@ import HamburguerIcon from './icons/Hamburguer';
 import CloseIcon from './icons/Close';
 import { cn, menuItems } from '@/lib/utils';
 
-export default function MobileMenu() {
+export default function MobileMenu({ className }: { className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className='text-primary-dark-blue'>
+    <div className={cn('text-primary-dark-blue', className)}>
       <button onClick={() => setIsOpen((val) => !val)}>
         {isOpen ? <CloseIcon /> : <HamburguerIcon />}
       </button>

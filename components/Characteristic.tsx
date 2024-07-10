@@ -9,12 +9,14 @@ export default function Characteristic({
   title,
 }: CharacteristicsProps) {
   return (
-    <div className='flex flex-col items-center gap-[28px]'>
+    <div className='flex flex-col items-center gap-[28px] lg:items-start'>
       <Icon />
-      <h3 className='text-primary-dark-blue mx-auto max-w-[15ch] text-2xl'>
+      <h3 className='mx-auto max-w-[15ch] text-2xl text-primary-dark-blue lg:mx-0'>
         {title}
       </h3>
-      <p className='text-neutral-grayish-blue text-xs'>{children}</p>
+      <p className='text-xs text-neutral-grayish-blue lg:text-sm lg:leading-6'>
+        {children}
+      </p>
     </div>
   );
 }
