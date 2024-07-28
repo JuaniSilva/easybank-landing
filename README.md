@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/images/easybank-sceenshop.png)
+![](./public/images/easybank-screenshot.png)
 
 ### Links
 
